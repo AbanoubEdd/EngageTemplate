@@ -1,0 +1,332 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+/* Start Nav */
+nav{
+    padding: 30px 0px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    position: fixed;
+    width: 100%;
+    z-index: 22;
+}
+nav .container{
+    width: 1200px;
+    margin: auto;
+}
+nav .row{
+    display: flex;
+    justify-content: space-between;
+}
+nav .row .logo{
+    flex: 60%;
+    max-width: 60%;
+}
+nav .row .logo img{
+    width: 22%;
+}
+
+nav .row .list-nav{
+    flex: 40%;
+    max-width: 40%;
+    margin-top: 10px;
+}
+nav .row .list-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav .row .list-nav ul a{
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+    font-weight: 600;
+}
+
+/* End Nav */
+
+/* Start Header */
+
+header{
+    background-image: url("/assets/img/business-main.jpg");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header .header-desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+.header-desc h2{
+    font-size: 70px;
+    margin-bottom: 50px;
+    line-height: 25px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+
+}
+.header-desc p{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin-bottom: 40px;
+}
+
+.btn-1 , .header-desc .btn-2{
+    border: 0;
+    padding: 16px 25px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #4274b7;
+    transition: 0.5s;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+.btn-1{
+    color: white;
+}
+
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+.header-desc .btn-2{
+    background-color: #EBEBEB;
+
+}
+.header-desc .btn-2:hover{
+    background-color: white;
+}
+
+header .animat{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    border: 1px solid white;
+    width: 35px;
+    height: 55px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+header .animat .scroll-animat span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    margin: 10px 11px;
+    animation-name: auto-scroll-animate ;
+    animation-duration:2s ;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes auto-scroll-animate{
+    20% {
+        opacity: 0.7;
+    }
+    85% {
+        opacity: 0.5;
+    }
+    
+    90% {
+        transform: translateY(47px);
+        
+    }
+    95%{
+        opacity: 0;
+    }
+
+}
+/* End Header */
+
+/* Start Header */
+
+.data{
+    padding: 50px 0px;
+}
+.data .container{
+    width: 1200px;
+    margin: auto;
+}
+.data .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 55px 0px;
+}
+
+.data .container .row .data-info{
+    flex: 33.3333%;
+    max-width: 33.3333%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 40px;
+    font-size: 18px;
+}
+.data .container .row .data-info .svg-inline--fa{
+    margin-right: 20px;
+    margin-top: 7px;
+    font-size: 26px;
+    color: #686868;
+}
+.data .container .row .data-info .info-body p{
+    color: #686868;
+}
+/* End Header */
+
+
+/* *** Start  Who are we**** */
+
+.who{
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f9;
+    padding: 80px 0px;
+}
+.who .container{
+    width: 1200px;
+    margin: auto;
+}
+.who .container .row{
+    display: flex;
+    justify-content: center;
+}
+
+.who .container .row .who-img{
+    flex: 50%;
+    max-width: 50%;
+
+}
+
+.who .container .row .who-img img{
+    width: 550px;
+}
+
+.who .container .row .who-info{
+    flex: 50%;
+    max-width: 50%;
+    margin: 100px;
+
+}
+
+.who .container .row .who-info ul{
+    list-style-type: none;
+    padding-bottom: 25px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #686868;
+}
+.who .container .row .who-info ul li{
+    margin-bottom: 20px;
+    font-size: 18px;
+
+}
+.who .container .row .who-info ul li .fa-check{
+    color: #4274b7;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.who .container .row .who-info h2{
+    padding-bottom: 25px;
+    font-size: 28px;
+    line-height: 39px;
+    color: #303030;
+}
+.who .container .row .who-info p{
+    padding-bottom: 35px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #686868;
+}
+.who .container .row .who-info .btn-1:hover{
+    background-color: rgba(0, 0, 0, 0.774);
+    color: #f8f8f9;
+}
+
+.who.tow{
+    background-color: #ffffff;
+    padding-bottom: 30px 0px;
+}
+
+/* *** End  Who are we**** */
+/* ************ Start Services **********/
+
+.Services-sec{
+    padding: 60px;
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #f8f8f9;
+}
+.Services-sec .heading-Services{
+    margin-bottom: 50px;
+}
+.Services-sec .container{
+    width: 1200px;
+    margin:auto;
+}
+.Services-sec .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Services-sec .row .services-info{
+    flex: 25%;
+    max-width: 25%;
+    margin-right: 35px;
+    padding: 50px 0px;
+
+}
+.services-info .svg-inline--fa{
+    color:white ;
+    font-size: 24px;
+    margin: 13px 12px ;
+
+}
+
+.icon-box{
+    background-color: #4274B7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+/* ************ Start Services **********/
