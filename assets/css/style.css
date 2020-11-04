@@ -20,7 +20,7 @@ nav{
     width: 100%;
     z-index: 22;
 }
-nav .container{
+.container{
     width: 1200px;
     margin: auto;
 }
@@ -274,7 +274,7 @@ header .animat .scroll-animat span{
     line-height: 25px;
     color: #686868;
 }
-.who .container .row .who-info .btn-1:hover{
+.who .container .row .who-info .btn-1:hover , .work-desc .btn-1:hover{
     background-color: rgba(0, 0, 0, 0.774);
     color: #f8f8f9;
 }
@@ -288,7 +288,7 @@ header .animat .scroll-animat span{
 /* ************ Start Services **********/
 
 .Services-sec{
-    padding: 60px;
+    padding: 100px 0 60px 0;
     text-align: center;
     width: 100%;
     height: 90vh;
@@ -311,7 +311,7 @@ header .animat .scroll-animat span{
     flex: 25%;
     max-width: 25%;
     margin-right: 35px;
-    padding: 50px 0px;
+    padding: 30px 0px;
 
 }
 .services-info .svg-inline--fa{
@@ -329,4 +329,136 @@ header .animat .scroll-animat span{
     margin-left: 100px;
     margin-bottom: 10px;
 }
-/* ************ Start Services **********/
+
+.heading-Services .fa-star{
+    font-size: 40px;
+    color: #4274B7;
+    margin-bottom: 10px;
+}
+.heading-Services h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.heading-Services p{
+    font-size: 18px;
+    line-height: 31px;
+    color: #888888;
+    font-weight: 400;
+}
+
+.services-info p{
+    font-size: 19px;
+    line-height: 25px;
+    color: #888888;
+    font-weight: 400;
+    width: 90%;
+    margin: auto;
+    padding-top: 10PX;
+}
+/* ************ End Services **********/
+
+/* ************ Start Testimonials **********/
+.Testimonials{
+    background-image: url("/assets/img/business-main.jpg");
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    color: #fff;
+
+}
+.Testimonials .over{
+    width: 100%;
+    height: 100%;
+    background-color: #4f7dbb;
+    opacity: 0.9;
+    padding-top: 100px;
+}
+.Testimonials-desc .comment{
+    font-size: 45px ;
+    margin-bottom: 40px;
+}
+.Testimonials-desc p{
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+.Testimonials-desc span{
+    display: block;
+
+}
+.Testimonials-desc span:first-of-type{
+    font-weight: 600;
+    font-size: 20px;margin-bottom: 5px;
+}
+.Testimonials-desc button{
+    margin-top: 45px;
+    background-color: transparent;
+    padding: 12px;
+    border: oldlace 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    color: oldlace;
+    outline: none;
+}
+.Testimonials-desc button:hover{
+    background-color: oldlace;
+    color: black;
+}
+/* ************ End Testimonials **********/
+
+/* ************ Start logos **********/
+
+.logos{
+    padding: 90px 0px;
+    width: 100%;
+    height: 270px;
+    background-color: white;
+}
+.logos .row{
+    display: flex;
+}
+
+.logo-img{
+    margin: 30px;
+    flex: 25%;
+}
+.logo-img img{
+    width: 164px;
+    opacity: 0.5;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.logo-img img:hover{
+    opacity: 1;
+}
+/* ************ End logos **********/
+
+
+/*********** start work ************/
+
+.work{
+    background-color: #f8f8f9;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    padding: 90px 0px;
+}
+.work-desc h2{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #303030;
+    margin-bottom: 30px;
+}
+.work-desc p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #888888;
+    margin-bottom: 30px;
+}
+
+/*********** End work ************/
+
+
